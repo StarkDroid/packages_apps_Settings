@@ -81,6 +81,13 @@
         android:title="@string/powermenu_category"
 		android:enabled="true" />
     
+    <!-- IME Settings -->	
+    <PreferenceScreen
+        android:key="keyboard_input_settings"
+        android:fragment="com.android.settings.sshd.InputMethodsSettings"
+        android:title="@string/title_keyboard_input"
+	android:enabled="true" />
+    
     <!-- Misc -->	
     <!--<PreferenceScreen
     	android:key="misc"
