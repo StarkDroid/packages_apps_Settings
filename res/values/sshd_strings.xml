@@ -491,5 +491,10 @@
 	
 	<string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+	
+	<!-- Contexual statusbar header-->
+    <string name="contexual_header_title">Contexual header</string>
+    <string name="status_bar_custom_header_title">Custom header image</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
 
 </resources>
