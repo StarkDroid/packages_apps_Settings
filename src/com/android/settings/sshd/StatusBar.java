@@ -60,6 +60,9 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
     private static final String TAG = "StatusBarSettings";
 	
+    private static final String PREF_CUSTOM_HEADER_DEFAULT = "status_bar_custom_header_default";
+
+    private SwitchPreference mCustomHeader;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,9 +77,30 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         PackageManager pm = getPackageManager();
 
     }
+	
+	@Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+		
+        // Status bar custom header hd
+        mCustomHeader = (SwitchPreference) findPreference(PREF_CUSTOM_HEADER_DEFAULT);
+        mCustomHeader.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, 0) == 1));
+        mCustomHeader.setOnPreferenceChangeListener(this);
+
+    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 		ContentResolver resolver = getActivity().getContentResolver();
+		if (preference == mCustomHeader) {
+           boolean value = (Boolean) newValue;
+           Settings.System.putInt(resolver,
+                   Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, value ? 1 : 0);
+            return true;
+        }
 		
         return false;
     }
