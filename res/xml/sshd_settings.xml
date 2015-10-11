@@ -41,11 +41,11 @@
 	android:enabled="false" />-->
 	
 	<!-- Navigation Bar -->
-    <!--<PreferenceScreen
+    <PreferenceScreen
     	android:key="navibar"
         android:fragment="com.android.settings.sshd.Navbar"
         android:title="@string/navbar_navring"
-	android:enabled="false" />-->
+	android:enabled="true" />
 	
     <!-- Sound & volume -->
     <!--<PreferenceScreen
