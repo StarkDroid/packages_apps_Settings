@@ -17,6 +17,17 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/sounds"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">	
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <PreferenceCategory
+        android:key="sound_button_cat"
+        android:title="@string/sound_buttons_cat" >
+
+    	<SwitchPreference
+       	     android:key="volume_rocker_wake"
+             android:summary="@string/volume_rocker_wake_summary"
+             android:title="@string/volume_rocker_wake_title" />
+
+    </PreferenceCategory>	
 
 </PreferenceScreen> 

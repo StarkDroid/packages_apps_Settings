@@ -54,11 +54,11 @@
 	    android:enabled="true" />
 	
     <!-- Sound & volume -->
-    <!--<PreferenceScreen
+    <PreferenceScreen
     	android:key="sounds"
         android:title="@string/sounds"
         android:fragment="com.android.settings.sshd.SoundSettings"
-	android:enabled="false" />	-->    
+	android:enabled="true" />	    
 	
 	<!-- Lockscreen -->	
     <PreferenceScreen
