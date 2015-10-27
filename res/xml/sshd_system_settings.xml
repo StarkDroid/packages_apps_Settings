@@ -24,4 +24,10 @@
         android:fragment="com.android.settings.sshd.fragments.MultiWindow"
         android:title="@string/multiwindow_settings_title" />
 
+    <com.android.settings.sshd.SystemSettingSwitchPreference
+        android:key="toast_icon"
+        android:title="@string/toast_icon_title"
+        android:summary="@string/toast_icon_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
