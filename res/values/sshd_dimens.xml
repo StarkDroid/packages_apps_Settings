@@ -16,4 +16,8 @@
 
 <resources>
     <dimen name="fab_line_width">2dp</dimen>
+
+    <!-- Shortcur picker -->
+    <dimen name="shortcut_picker_left_padding">40dip</dimen>
+
 </resources>
