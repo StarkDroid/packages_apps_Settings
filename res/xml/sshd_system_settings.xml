@@ -18,11 +18,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/misc"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-    
-    <!-- Power Menu -->
+
     <PreferenceScreen
-    	android:key="power_menu"
-        android:title="@string/power_menu"
-        android:fragment="com.android.settings.screwd.PowerMenu" /> 				
+    	android:key="multitwindow"
+        android:fragment="com.android.settings.sshd.fragments.MultiWindow"
+        android:title="@string/multiwindow_settings_title" />
 
 </PreferenceScreen>
