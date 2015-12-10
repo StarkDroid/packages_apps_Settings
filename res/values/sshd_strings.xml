@@ -512,5 +512,11 @@
 	<!-- Battery saver color -->
     <string name="battery_saver_color_title">Warning color</string>
     <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+	
+	<!-- Break SystemUI Tuner into two parts -->
+    <string name="quick_settings_title">Quick Settings</string>
+    <string name="quick_settings_summary">Configure quick settings tiles</string>
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
 
 </resources>

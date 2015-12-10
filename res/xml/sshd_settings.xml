@@ -47,11 +47,11 @@
 	android:enabled="true" />
 	    
     <!-- Notifications -->
-    <!--<PreferenceScreen
+    <PreferenceScreen
     	android:key="notifications"
         android:fragment="com.android.settings.sshd.Notifications"
         android:title="@string/notifications"
-	android:enabled="false" />-->
+	android:enabled="true" />
 	
 	<!-- Navigation Bar -->
     <PreferenceScreen
