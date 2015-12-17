@@ -82,6 +82,6 @@ public class Notifications extends SettingsPreferenceFragment implements
 	
 	@Override
 	protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return SSHD_SETTINGS;
     }
 }
