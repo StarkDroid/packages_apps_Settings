@@ -77,7 +77,15 @@
             android:id="@+id/custom_section"
             android:title="@string/header_category_custom" >
 				
-        <!-- Themes -->
+        <!-- SSHD Control -->
+        <dashboard-tile
+                android:id="@+id/screwd_settings"
+                android:icon="@drawable/ic_settings_about"
+                android:fragment="com.android.settings.sshd.SSHDSettings"
+                android:title="@string/sshd_settings"
+                />
+		 
+		<!-- Themes -->
         <dashboard-tile
             android:id="@+id/theme_settings"
             android:title="@string/themes_settings_title"
