@@ -31,6 +31,18 @@
     <string name="header_category_custom">Customization</string>
 	<string name="themes_settings_title">Themes</string>
 	
+	<!-- SSHD Control -->
+	<string name="sshd_settings">SSHD Contol</string>
+    <string name="ui">User Interface</string>
+    <string name="system">System</string>
+    <string name="notifications">Notifications</string>
+    <string name="misc">Misc</string>
+	<string name="lc">Lock Screen</string>
+    <string name="navbar_navring">Navigation Bar</string>
+    <string name="power_menu">Power Menu</string>
+    <string name="recents">Recents</string>
+    <string name="sounds">Sounds &amp; Volume</string>
+	
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
