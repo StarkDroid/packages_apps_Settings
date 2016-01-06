@@ -67,7 +67,14 @@
           android:fragment="com.android.settings.sshd.Recents"
          android:title="@string/recents"
     android:enabled="false" />-->
-
+	
+	<!-- Power Menu -->
+	<PreferenceScreen
+        android:key="powermenu"
+        android:fragment="com.android.settings.sshd.PowerMenu"
+        android:title="@string/powermenu_category"
+		android:enabled="true" />
+    
     <!-- Misc -->	
     <!--<PreferenceScreen
     	android:key="misc"
