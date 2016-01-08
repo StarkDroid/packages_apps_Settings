@@ -26,7 +26,7 @@ import com.android.internal.util.cm.ScreenType;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
-public class NavBar extends SettingsPreferenceFragment implements
+public class Navbar extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
@@ -151,6 +151,6 @@ public class NavBar extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.NAVBAR_SETTINGS;
+        return MetricsLogger.NAV_DIMENSION_SETTINGS;
     }
 }
