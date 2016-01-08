@@ -151,6 +151,6 @@ public class NavBar extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.NAVBAR_SETTINGS;
     }
 }
