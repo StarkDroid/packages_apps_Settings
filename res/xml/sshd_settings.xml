@@ -33,11 +33,11 @@
 	android:enabled="true" />
     
     <!-- System -->
-    <!--<PreferenceScreen
+    <PreferenceScreen
     	android:key="system"
         android:fragment="com.android.settings.sshd.System"
         android:title="@string/system"
-	android:enabled="false" />-->
+	android:enabled="true" />
 	    
     <!-- Notifications -->
     <!--<PreferenceScreen
@@ -65,14 +65,14 @@
     	android:key="lockscreen"
         android:fragment="com.android.settings.sshd.Lockscreen"
         android:title="@string/lc"
-	android:enabled="false" />
+	android:enabled="true" />
 	
 	<!-- Recents -->
-	<!--<PreferenceScreen
+	<PreferenceScreen
           android:key="recents"
           android:fragment="com.android.settings.sshd.Recents"
          android:title="@string/recents"
-    android:enabled="false" />-->
+    android:enabled="true" />
 	
 	<!-- Power Menu -->
 	<PreferenceScreen
