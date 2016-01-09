@@ -44,6 +44,9 @@
     <string name="power_menu">Power Menu</string>
     <string name="recents">Recents</string>
     <string name="sounds">Sounds &amp; Volume</string>
+	<string name="sound_buttons_cat">Buttons</string>
+	<string name="display_category_led_title">LED Lights</string>
+	<string name="notification_drawer_cat">Notification Drawer</string>
 	
     <!-- General strings -->
     <string name="ok">OK</string>
