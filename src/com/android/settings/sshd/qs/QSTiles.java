@@ -35,13 +35,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.android.settings.sshd.R;
 import com.android.settings.sshd.Utils;
 
 import com.android.internal.util.cm.QSUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class QSTiles extends Fragment implements
@@ -176,6 +177,13 @@ public class QSTiles extends Fragment implements
                 dialog.dismiss();
             }
         };
+
+        Collections.sort(tilesList, new Comparator<QSTileHolder>() {
+            @Override
+            public int compare(QSTileHolder lhs, QSTileHolder rhs) {
+                return lhs.name.compareTo(rhs.name);
+            }
+        });
 
         final QSListAdapter adapter = new QSListAdapter(getActivity(),
                 mSystemUiContext, tilesList);
